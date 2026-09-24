@@ -15,14 +15,14 @@
 
   <header class="site-header">
     <a class="brand" href="#" aria-label="DRUKSTWÓR — strona główna">
-      <span class="brand-mark">D</span>
-      <span>DRUK<span class="brand-dot">STWÓR</span></span>
+      <img src="logo-drukstwór.png" alt="Logo DRUKSTWÓR" class="brand-logo">
     </a>
     <nav class="main-nav" aria-label="Główna nawigacja">
       <a href="#catalog">Katalog</a>
       <a href="#process">Jak powstają</a>
       <a href="#about">O nas</a>
       <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
     <a class="header-cta" href="#catalog">Zobacz figurki <span>↗</span></a>
     <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false"><span></span><span></span></button>
@@ -51,6 +51,7 @@
         <div class="figure figure-main"><span class="figure-eye"></span><span class="figure-eye right"></span><span class="figure-smile"></span></div>
         <div class="figure figure-small"><span class="figure-eye"></span><span class="figure-eye right"></span></div>
         <div class="moon"></div><div class="bat bat-one">✦</div><div class="bat bat-two">✦</div>
+        <img class="brand-hero-logo" src="logo-drukstwór.png" alt="Logo DRUKSTWÓR">
         <div class="art-label art-label-top"><span>01</span> STWÓR MIESIĄCA</div>
         <div class="art-label art-label-bottom">D-017 <span>◌</span> 12h druku</div>
       </div>
@@ -91,9 +92,69 @@
     <section class="about-section" id="about"><div class="about-inner"><p class="eyebrow"><span class="eyebrow-line"></span> Poznaj DRUKSTWORA</p><h2>Przedmioty z<br><em>osobowością.</em></h2><p>Nie tworzymy masowych gadżetów. Tworzymy małe przypomnienia o tym, co lubisz — od smoka na półce po kota, który zawsze patrzy w dobrą stronę.</p><a class="text-link light" href="#faq">Dowiedz się więcej <span>→</span></a></div><div class="about-stamp">MADE<br>WITH<br><strong>☾</strong><br>MAGIC</div></section>
 
     <section class="faq-section" id="faq"><div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Masz pytania?</p><h2>To, co warto<br><em>wiedzieć</em></h2></div><p class="section-intro">Nie znalazłeś odpowiedzi? Napisz do nas przez formularz kontaktowy na wybranej ofercie.</p></div><div class="faq-list"><details><summary>Z jakiego materiału drukujecie figurki?<span>+</span></summary><p>Najczęściej korzystamy z wysokiej jakości filamentu PLA — jest trwały, bezpieczny i dostępny w wielu kolorach. Przy małych, bardzo szczegółowych modelach używamy także żywicy.</p></details><details><summary>Czy mogę zamówić figurkę w innym kolorze?<span>+</span></summary><p>Tak. Jeśli interesuje Cię inny wariant kolorystyczny, napisz do nas przed zakupem przez wiadomość Allegro. Sprawdzimy dostępność i podamy termin realizacji.</p></details><details><summary>Ile trwa przygotowanie modelu?<span>+</span></summary><p>Standardowo przygotowanie i wysyłka zajmują 2–5 dni roboczych. Modele malowane lub wykonywane na indywidualne zamówienie mogą potrzebować więcej czasu.</p></details></div></section>
+
+    <section class="contact-section" id="kontakt">
+      <div class="section-heading contact-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> Kontakt</p><h2>Napisz do nas<br><em>i zrealizuj swój pomysł</em></h2></div>
+        <p class="section-intro">Masz pytanie o model, chcesz zamówić wersję specjalną albo zapytać o dostępność? Uzupełnij formularz — odpowiemy wkrótce.</p>
+      </div>
+      <div class="contact-box">
+        <form class="contact-form" id="contactForm">
+          <div class="field-row">
+            <label>
+              <span>Imię i nazwisko</span>
+              <input type="text" name="name" placeholder="Twoje imię i nazwisko" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="twoj@email.pl" required>
+            </label>
+          </div>
+          <div class="field-row">
+            <label>
+              <span>Temat</span>
+              <input type="text" name="subject" placeholder="np. Zamówienie na figurkę" required>
+            </label>
+            <label>
+              <span>Produkt / idea</span>
+              <select name="product">
+                <option value="">Wybierz opcję</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="zwierzeta">Zwierzęta</option>
+                <option value="dekoracje">Dekoracje</option>
+                <option value="retro">Retro</option>
+                <option value="indywidualne">Zamówienie indywidualne</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            <span>Wiadomość</span>
+            <textarea name="message" rows="6" placeholder="Opisz, czego szukasz. Możesz podać rozmiar, kolor, temat lub pomysł na postać." required></textarea>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="button button-primary">Wyślij wiadomość <span>→</span></button>
+            <p id="form-status" aria-live="polite"></p>
+          </div>
+        </form>
+        <aside class="contact-aside">
+          <div class="mini-card">
+            <span class="mini-label">Email</span>
+            <strong>biuro@drukstwór.pl</strong>
+          </div>
+          <div class="mini-card">
+            <span class="mini-label">Instagram</span>
+            <strong>@drukstwór</strong>
+          </div>
+          <div class="mini-card accent">
+            <span class="mini-label">Oferta</span>
+            <strong>Druk 3D z charakterem</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><a class="brand" href="#"><span class="brand-mark">D</span><span>DRUK<span class="brand-dot">STWÓR</span></span></a><p>Drukujemy stwory, które<br>chcesz mieć obok.</p><div class="footer-links"><a href="#catalog">Katalog</a><a href="#process">Jak powstają</a><a href="#faq">FAQ</a><a href="https://allegro.pl" target="_blank" rel="noopener">Allegro ↗</a></div><small>© 2024 DRUKSTWÓR</small></footer>
+  <footer class="site-footer"><a class="brand" href="#"><img src="logo-drukstwór.png" alt="Logo DRUKSTWÓR" class="brand-logo brand-logo-footer"></a><p>Drukujemy stwory, które<br>chcesz mieć obok.</p><div class="footer-links"><a href="#catalog">Katalog</a><a href="#process">Jak powstają</a><a href="#faq">FAQ</a><a href="#kontakt">Kontakt</a><a href="https://allegro.pl" target="_blank" rel="noopener">Allegro ↗</a></div><small>© 2024 DRUKSTWÓR</small></footer>
 
   <dialog class="product-modal" id="product-modal"><button class="modal-close" aria-label="Zamknij">×</button><div class="modal-visual" id="modal-visual"></div><div class="modal-content"><p class="eyebrow" id="modal-category"></p><h2 id="modal-name"></h2><p id="modal-description"></p><div class="modal-specs"><span><b>Materiał</b><small id="modal-material"></small></span><span><b>Wysokość</b><small id="modal-size"></small></span><span><b>Czas druku</b><small id="modal-time"></small></span></div><div class="modal-buy"><strong id="modal-price"></strong><a class="button button-primary" id="modal-link" href="https://allegro.pl" target="_blank" rel="noopener">Przejdź do Allegro <span>↗</span></a></div></div></dialog>
   <script src="script.js"></script>

@@ -83,4 +83,26 @@ menuToggle.addEventListener("click", () => {
   menuToggle.setAttribute("aria-expanded", isOpen);
 });
 nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => nav.classList.remove("open")));
+
+const contactForm = document.querySelector("#contactForm");
+const formStatus = document.querySelector("#form-status");
+if (contactForm) {
+  contactForm.addEventListener("submit", event => {
+    event.preventDefault();
+    const formData = new FormData(contactForm);
+    const name = (formData.get("name") || "").toString().trim();
+    const subject = (formData.get("subject") || "").toString().trim();
+    const email = (formData.get("email") || "").toString().trim();
+    const product = (formData.get("product") || "").toString().trim();
+    const message = (formData.get("message") || "").toString().trim();
+    const mailTo = `mailto:biuro@drukstwór.pl?subject=${encodeURIComponent(subject || "Zapytanie z DRUKSTWÓR")}&body=${encodeURIComponent(`Imię i nazwisko: ${name}\nEmail: ${email}\nProdukt / idea: ${product || "brak"}\n\nWiadomość:\n${message}`)}`;
+    formStatus.textContent = "Przekierowujemy do klienta mailowego…";
+    window.location.href = mailTo;
+    contactForm.reset();
+    setTimeout(() => {
+      formStatus.textContent = "Dziękujemy! Możesz też napisać bezpośrednio na biuro@drukstwór.pl";
+    }, 500);
+  });
+}
+
 renderProducts();
